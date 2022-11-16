@@ -4,12 +4,12 @@
 
 ## Installation
 
-###Create a virtual environment
+### Create a virtual environment
 ```
 python -m venv <virtual_env_name>
 ```
 
-###Activate it
+### Activate it
 
 (windows)
 ```
@@ -23,12 +23,12 @@ Use this repository as Django project template (don't forget the dot at the end 
 django-admin startproject --template https://github.com/igorims/django-project-template/archive/master.zip <projectname> .
 ```
 
-###Install everything from requirements.txt
+### Install everything from requirements.txt
 ```
 pip install -r requirements.txt
 ```
 
-###Make migrations:
+### Make migrations:
 
 ```
 python manage.py makemigrations
@@ -38,7 +38,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-###Run server:
+### Run server:
 
 ```
 python manage.py runserver
