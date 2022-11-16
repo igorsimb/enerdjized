@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'allauth',
     'allauth.account',
+    'widget_tweaks',
 
     # Local
     'core.apps.CoreConfig',

@@ -1,6 +1,14 @@
 # Django Bootstrap Starter Kit
 
-#### Includes Bootstrap 5 and AbstractUser
+#### Includes the following features
+- 2 apps - core and accounts - with URLs, views and basic templates already set up
+- Bootstrap 5
+- Custom User model 
+- Registration, log in/out using `django-allauth` (with email for authentication method)
+- [`django-extensions`](https://github.com/django-extensions/django-extensions)
+- [`django-debug-toolbar`](https://github.com/jazzband/django-debug-toolbar)
+- [`django-widget-tweaks`](https://github.com/jazzband/django-widget-tweaks)
+- Tests for Custom User and sign up
 
 ## Installation
 
