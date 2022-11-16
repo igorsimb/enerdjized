@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% block title %}
+    Main Page
+{% endblock title %}
+
+{% block content %}
+
+
+<h1>This was successfully created from a template</h1>
+<h4>More info on
+    <a href="https://github.com/igorsimb/django-project-template" target="_blank">
+        https://github.com/igorsimb/django-project-template
+    </a>
+</h4>
+{% if user.is_authenticated %}
+    <p>Hi {{ user.email }}!</p>
+    <p><a href="{% url 'acount_logout' %}">Log Out</a></p>
+{% else %}
+    <p>You are not logged in. But all functionality is ready.</p>
+    <a href="{% url 'acount_login' %}">Log In</a>
+    <a href="{% url 'acount_signup' %}">Sign Up</a>
+{% endif %}
+
+{% endblock content %}
