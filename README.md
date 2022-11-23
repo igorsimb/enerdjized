@@ -24,6 +24,16 @@ python -m venv <virtual_env_name>
 <virtual_env_name>\Scripts\activate
 ```
 
+(macOS)
+```shell
+source <virtual_env_name>/bin/activate
+```
+
+### Install Django
+```shell
+pip install django
+```
+
 ### Run startproject command
 Use this repository as Django project template (don't forget the dot at the end to create project in the same directory). Also, use your own preferred name for `<projectname>`
 
