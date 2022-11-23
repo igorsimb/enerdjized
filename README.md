@@ -40,7 +40,7 @@ Use this repository as Django project template (don't forget the dot at the end 
 ```shell
  django-admin startproject --template https://github.com/igorsimb/django-project-template/archive/refs/heads/master.zip <project_name> .
 ```
-https://github.com/igorsimb/django-project-template.git
+
 ### Install everything from requirements.txt
 ```shell
 pip install -r requirements.txt
