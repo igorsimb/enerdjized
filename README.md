@@ -35,12 +35,12 @@ pip install django
 ```
 
 ### Run startproject command
-Use this repository as Django project template (don't forget the dot at the end to create project in the same directory). Also, use your own preferred name for `<projectname>`
+Use this repository as Django project template (don't forget the dot at the end if you want to create project in the same directory). Also, use your own preferred name for `<project_name>`
 
 ```shell
-django-admin startproject --template https://github.com/igorims/django-project-template/archive/master.zip <projectname> .
+ django-admin startproject --template https://github.com/igorsimb/django-project-template/archive/refs/heads/master.zip <project_name> .
 ```
-
+https://github.com/igorsimb/django-project-template.git
 ### Install everything from requirements.txt
 ```shell
 pip install -r requirements.txt
