@@ -1,4 +1,6 @@
+from allauth.account.models import EmailAddress
 from django.contrib import admin
+from django.contrib.sites.models import Site
 from django.urls import path, include
 
 urlpatterns = [
@@ -14,3 +16,6 @@ urlpatterns = [
     # Third-party apps
     path('__debug__/', include('debug_toolbar.urls')),
 ]
+
+admin.site.unregister(Site)
+admin.site.unregister(EmailAddress)
