@@ -2,3 +2,5 @@
 .idea
 .git
 /.template/
+.env
+db.sqlite3

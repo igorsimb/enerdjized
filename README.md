@@ -12,6 +12,9 @@
 
 ## Installation
 
+
+### Create a new folder for your project
+
 ### Create a virtual environment
 ```shell
 python -m venv <virtual_env_name>
@@ -29,16 +32,10 @@ python -m venv <virtual_env_name>
 source <virtual_env_name>/bin/activate
 ```
 
-### Install Django
+### Clone this repository
+Don't forget the dot at the end if you want to create project in the same directory.
 ```shell
-pip install django
-```
-
-### Run startproject command
-Use this repository as Django project template (don't forget the dot at the end if you want to create project in the same directory). Also, use your own preferred name for `<project_name>`
-
-```shell
- django-admin startproject --template https://github.com/igorsimb/django-project-template/archive/refs/heads/master.zip <project_name> .
+ git clone git@github.com:igorsimb/django-project-template.git .
 ```
 
 ### Install everything from requirements.txt
