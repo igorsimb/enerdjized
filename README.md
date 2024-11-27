@@ -5,9 +5,9 @@
 - Bootstrap 5
 - Custom User model 
 - Registration, log in/out using `django-allauth` (with email as authentication method)
-- [`django-extensions`](https://django-extensions.readthedocs.io/en/latest/)
 - [`django-debug-toolbar`](https://django-debug-toolbar.readthedocs.io/en/latest/)
 - [`django-widget-tweaks`](https://pypi.org/project/django-widget-tweaks/)
+- [`django-environ`](https://pypi.org/project/django-environ/)
 - Tests for Custom User, sign up, views, and templates
 
 ## Installation
