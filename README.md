@@ -1,9 +1,10 @@
-# Django Bootstrap Starter Kit
+# Django Tailwind Starter Kit
 
 #### Includes the following features
 - 2 apps - core and accounts - with URLs, views and basic templates already set up
-- Bootstrap 5
+- Tailwind CSS
 - Custom User model 
+- Profile model
 - Registration, log in/out using `django-allauth` (with email as authentication method)
 - [`django-debug-toolbar`](https://django-debug-toolbar.readthedocs.io/en/latest/)
 - [`django-widget-tweaks`](https://pypi.org/project/django-widget-tweaks/)
