@@ -2,6 +2,7 @@
 
 #### Includes the following features
 - 2 apps - `core` and `accounts` - with URLs, views and basic templates already set up
+- Separate settings for local and production
 - Tailwind CSS
 - Custom User model 
 - Profile model
