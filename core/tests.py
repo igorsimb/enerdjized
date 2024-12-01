@@ -17,7 +17,7 @@ class IndexPageTests(SimpleTestCase):
         self.assertTemplateUsed(self.response, "core/index.html")
 
     def test_index_page_contains_correct_html(self):
-        self.assertContains(self.response, 'Main Page')
+        self.assertContains(self.response, 'New Project')
 
     def test_index_page_does_not_contain_incorrect_html(self):
         self.assertNotContains(self.response, "Hi! I should not be on the page.")
