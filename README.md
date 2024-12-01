@@ -1,14 +1,21 @@
 # Django Tailwind Starter Kit
 
 #### Includes the following features
-- 2 apps - core and accounts - with URLs, views and basic templates already set up
+- 2 apps - `core` and `accounts` - with URLs, views and basic templates already set up
 - Tailwind CSS
 - Custom User model 
 - Profile model
-- Registration, log in/out using `django-allauth` (with email as authentication method)
+- `django-allauth` for:
+  - registration
+  - log in/out
+  - email change
+  - email verification
+- account deletion
+- Profile settings (view, edit, delete) using HTMX
+- Beautiful messages with auto dismissal using AlpineJS
 - [`django-debug-toolbar`](https://django-debug-toolbar.readthedocs.io/en/latest/)
 - [`django-widget-tweaks`](https://pypi.org/project/django-widget-tweaks/)
-- [`django-environ`](https://pypi.org/project/django-environ/)
+- [`django-htmx`](https://pypi.org/project/django-htmx/)
 - Tests for Custom User, sign up, views, and templates
 
 ## Installation
