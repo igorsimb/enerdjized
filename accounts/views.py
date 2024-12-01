@@ -1,8 +1,10 @@
+from allauth.account.utils import send_email_confirmation
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
 
-from .forms import ProfileForm
+from .forms import ProfileForm, EmailChangeForm
 from .models import User
 
 
@@ -38,3 +40,48 @@ def profile_edit_view(request):
 
     context = {"form": form, "onboarding": onboarding}
     return render(request, "account/profile_edit.html", context)
+
+
+@login_required
+def profile_settings_view(request):
+    return render(request, "account/profile_settings.html")
+
+@login_required
+def email_change_view(request):
+
+    if request.htmx:
+        form = EmailChangeForm(instance=request.user)
+        return render(request, "account/partials/email_change_form.html", {"form": form})
+
+    if request.method == "POST":
+        form = EmailChangeForm(request.POST, instance=request.user)
+
+        if form.is_valid():
+            # Check if the email already exists
+            email = form.cleaned_data["email"]
+            if User.objects.filter(email=email).exclude(id=request.user.id).exists():
+                messages.warning(request, f"{email} is already in use.")
+                return redirect("profile_settings")
+
+            form.save()
+
+            # Then Signal updates the email_address and sets "verified" to False
+
+            # Then send confirmation email
+            send_email_confirmation(request, request.user)
+
+            return redirect("profile_settings")
+        else:
+            messages.warning(request, "Form not valid")
+            return redirect("profile_settings")
+
+    return redirect("index")
+
+
+@login_required
+def email_verify(request):
+    """
+    Send confirmation email to the user
+    """
+    send_email_confirmation(request, request.user)
+    return redirect("profile_settings")
