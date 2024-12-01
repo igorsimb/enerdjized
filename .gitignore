@@ -4,3 +4,4 @@
 /.template/
 .env
 db.sqlite3
+/media/*
