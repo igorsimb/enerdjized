@@ -1,4 +1,4 @@
-# Django Tailwind Starter Kit
+# Django Starter Kit with Tailwind, HTMX and AlpineJS
 
 #### Includes the following features
 - 2 apps - `core` and `accounts` - with URLs, views and basic templates already set up
