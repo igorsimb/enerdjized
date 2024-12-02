@@ -14,14 +14,14 @@ toast messages custom error pages, and more.
       <em>Main Page</em>
     </td>
     <td  align ="center">
-      <a href="" target="_blank" title="Edit Profile">
+      <a href="assets/2.png" target="_blank" title="Edit Profile">
         <img src="assets/2.png" alt="Edit Profile">
       </a>
       <br />
       <em>Edit Profile</em>
     </td>
     <td align="center">
-    <a href="" target="_blank" title="Account Settings">
+    <a href="assets/3.png" target="_blank" title="Account Settings">
       <img src="assets/3.png" alt="Account Settings">
     </a>
       <br />
@@ -30,14 +30,14 @@ toast messages custom error pages, and more.
   </tr>
   <tr>
     <td align="center">
-    <a href="" target="_blank" title="Inline Form">
+    <a href="assets/3.5.png" target="_blank" title="Inline Form">
         <img src="assets/3.5.png" alt="Inline Form">
       </a>
       <br />
       <em>Inline Form</em>
     </td>
     <td align="center">
-      <a href="" target="_blank" title="Beautiful Signup">
+      <a href="assets/4.png" target="_blank" title="Beautiful Signup">
         <img src="assets/4.png" alt="Beautiful Signup">
       </a>
       <br />
