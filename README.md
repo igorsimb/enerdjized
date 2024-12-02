@@ -1,8 +1,14 @@
-# Enerdjized: a Django Starter Kit
+# Enerdjized 
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Django](https://img.shields.io/badge/django-5.0+-green.svg)](https://www.djangoproject.com/)
 
-Enerdjized is a batteries-included Django starter project with everything you need to start coding,
-using HTMX, AlpineJS and including user authentication, static files, default styling using Tailwind CSS, beautiful 
-toast messages custom error pages, and more.
+> A batteries-included Django starter project for rapid development with modern tools
+
+## Overview
+
+Enerdjized is a powerful Django starter kit that combines the best modern tools and practices for web development. Built with HTMX, AlpineJS, and Tailwind CSS, it provides everything you need to start building professional web applications.
+
+## Screenshots
 
 <table>
   <tr>
@@ -46,84 +52,96 @@ toast messages custom error pages, and more.
   </tr>
 </table>
 
-#### Includes the following features
-- 2 apps - `core` and `accounts` - with URLs, views and basic templates already set up
-- Separate settings for local and production
-- Tailwind CSS
-- Custom User model 
-- Profile model
-- `django-allauth` for:
-  - registration
-  - log in/out
-  - email change
-  - email verification
-- account deletion
-- Profile settings (view, edit, delete) using HTMX
-- Beautiful messages with auto dismissal using AlpineJS
-- [`django-debug-toolbar`](https://django-debug-toolbar.readthedocs.io/en/latest/)
-- [`django-widget-tweaks`](https://pypi.org/project/django-widget-tweaks/)
-- [`django-htmx`](https://pypi.org/project/django-htmx/)
-- Tests for Custom User, sign up, views, and templates
+## Features
 
-## Installation
+### Frontend
+- Tailwind CSS for modern, responsive styling
+- HTMX for dynamic interactions
+- AlpineJS for reactive components
+- Beautiful toast messages with auto-dismissal
+- Responsive design out of the box
 
+### Backend
+- Separate settings for local and production environments
+- Custom User model
+- Profile management system
+- Django Debug Toolbar integration
+- Basic test suite
 
-### Create a new folder for your project
+### Authentication
+- Complete user authentication flow with django-allauth
+- Email verification system
+- Account management (edit, delete)
+- Profile settings with HTMX integration
 
-### Create a virtual environment
-```shell
-python -m venv <virtual_env_name>
-```
+### Development Tools
+- Django Debug Toolbar
+- Widget Tweaks for form styling
+- HTMX integration
 
-### Activate it
+## Prerequisites
 
-(windows)
-```shell
-<virtual_env_name>\Scripts\activate
-```
+- Python 3.8 or higher
+- pip (Python package manager)
+- Git
+- Basic knowledge of Django
 
-(macOS)
-```shell
-source <virtual_env_name>/bin/activate
-```
+## Quick Start
 
-### Clone this repository
-Don't forget the dot at the end if you want to create project in the same directory.
-```shell
- git clone git@github.com:igorsimb/django-project-template.git .
-```
+```bash
+# Create virtual environment
+python -m venv venv
 
-### Install everything from requirements.txt
-```shell
+# Activate virtual environment
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+
+# Clone repository
+git clone git@github.com:igorsimb/django-project-template.git .
+
+# Install dependencies
 pip install -r requirements.txt
-```
 
-### Make migrations:
-
-```shell
-python manage.py makemigrations
-```
-
-```shell
+# Setup database
 python manage.py migrate
-```
 
-### Run tests
-```shell
+# Run tests
 python manage.py test
-```
 
-### Run server:
-
-```shell
+# Run server
 python manage.py runserver
 ```
 
-Note:
-Whenever you need to call User, put this at the top of the file (e.g. in views.py, models.py):
+## Usage Note
+
+When working with the User model, always use:
+
 ```python
 from django.contrib.auth import get_user_model
 User = get_user_model()
 ```
 
-You are all set! :)
+## Troubleshooting
+
+### Common Issues
+
+1. **Installation Errors**
+   - Ensure you're using Python 3.8+
+   - Verify your virtual environment is activated
+   - Try updating pip: `python -m pip install --upgrade pip`
+
+2. **Database Migrations**
+   - If you encounter migration errors, try:
+     ```bash
+     python manage.py migrate --run-syncdb
+     ```
+
+3. **Static Files Not Loading**
+   - Run `python manage.py collectstatic`
+   - Verify your `STATIC_ROOT` setting
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
