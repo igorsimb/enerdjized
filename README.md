@@ -8,6 +8,21 @@
 
 Enerdjized is a powerful Django starter kit that combines the best modern tools and practices for web development. Built with HTMX, AlpineJS, and Tailwind CSS, it provides everything you need to start building professional web applications.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Screenshots](#screenshots)
+- [Features](#features)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+  - [Authentication](#authentication)
+  - [Development Tools](#development-tools)
+- [Prerequisites](#prerequisites)
+- [Quick Start](#quick-start)
+- [Usage Note](#usage-note)
+- [Troubleshooting](#troubleshooting)
+  - [Common Issues](#common-issues)
+
 ## Screenshots
 
 <table>
