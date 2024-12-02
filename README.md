@@ -1,4 +1,50 @@
-# Django Starter Kit with Tailwind, HTMX and AlpineJS
+# Enerdjized: a Django Starter Kit
+
+Enerdjized is a batteries-included Django starter project with everything you need to start coding,
+using HTMX, AlpineJS and including user authentication, static files, default styling using Tailwind CSS, beautiful 
+toast messages custom error pages, and more.
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="assets/1.png" target="_blank" title="Main Page">
+        <img src="assets/1.png" alt="Main Page">
+      </a>
+      <br />
+      <em>Main Page</em>
+    </td>
+    <td  align ="center">
+      <a href="" target="_blank" title="Edit Profile">
+        <img src="assets/2.png" alt="Edit Profile">
+      </a>
+      <br />
+      <em>Edit Profile</em>
+    </td>
+    <td align="center">
+    <a href="" target="_blank" title="Account Settings">
+      <img src="assets/3.png" alt="Account Settings">
+    </a>
+      <br />
+      <em>Account Settings</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+    <a href="" target="_blank" title="Inline Form">
+        <img src="assets/3.5.png" alt="Inline Form">
+      </a>
+      <br />
+      <em>Inline Form</em>
+    </td>
+    <td align="center">
+      <a href="" target="_blank" title="Beautiful Signup">
+        <img src="assets/4.png" alt="Beautiful Signup">
+      </a>
+      <br />
+      <em>Beautiful Signup</em>
+    </td>
+  </tr>
+</table>
 
 #### Includes the following features
 - 2 apps - `core` and `accounts` - with URLs, views and basic templates already set up
